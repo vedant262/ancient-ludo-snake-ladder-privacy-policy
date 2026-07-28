@@ -16,6 +16,7 @@
     --border: #e8e0d0;
     --yes: #059669;
     --no: #dc2626;
+    --info: #b8860b;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
@@ -84,6 +85,7 @@
   }
   .val.no-val { background: #fef2f2; color: var(--no); }
   .val.yes-val { background: #f0fdf4; color: var(--yes); }
+  .val.info-val { background: #fdf3e0; color: var(--info); }
   .section { margin-bottom: 36px; }
   .section-title {
     font-family: 'DM Serif Display', serif;
@@ -108,6 +110,7 @@
   }
   .pill.red { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
   .pill.green { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+  .pill.amber { background: #fdf3e0; color: #8a5d00; border: 1px solid #f0d060; }
   .highlight {
     background: linear-gradient(135deg, #fef9e7, #fdf0c0);
     border: 1px solid #f0d060;
@@ -143,7 +146,7 @@
 <div class="hero">
   <div class="badge">PRIVACY POLICY</div>
   <h1>Ancient Ludo: Snake &amp; Ladder<br>by Dragoster Studios</h1>
-  <p>Effective Date: May 28, 2026 &nbsp;·&nbsp; Last Updated: May 28, 2026</p>
+  <p>Effective Date: May 28, 2026 &nbsp;·&nbsp; Last Updated: July 29, 2026</p>
 </div>
 
 <div class="wrap">
@@ -152,7 +155,7 @@
     <div class="summary-card">
       <div class="icon">📊</div>
       <div class="label">Data Collection</div>
-      <div class="val no-val">None</div>
+      <div class="val info-val">Advertising ID Only</div>
     </div>
     <div class="summary-card">
       <div class="icon">🔐</div>
@@ -162,17 +165,17 @@
     <div class="summary-card">
       <div class="icon">📢</div>
       <div class="label">Advertisements</div>
-      <div class="val no-val">No Ads</div>
+      <div class="val info-val">Yes — Google AdMob</div>
     </div>
     <div class="summary-card">
       <div class="icon">🆔</div>
       <div class="label">Advertising ID</div>
-      <div class="val no-val">Not Used</div>
+      <div class="val info-val">Collected &amp; Shared</div>
     </div>
     <div class="summary-card">
       <div class="icon">🌐</div>
       <div class="label">Internet Access</div>
-      <div class="val no-val">Not Required</div>
+      <div class="val info-val">Used to Load Ads</div>
     </div>
     <div class="summary-card">
       <div class="icon">🆓</div>
@@ -184,76 +187,90 @@
   <div class="section">
     <div class="section-title"><span class="num">1</span> Overview</div>
     <p>This Privacy Policy describes how Dragoster Studios ("we", "us", or "our") handles information in connection with the <strong>Ancient Ludo: Snake &amp; Ladder</strong> mobile game application ("the App") available on Google Play.</p>
-    <p>We built this App with a simple principle: your privacy is fully respected. The App does not collect, store, transmit, or share any personal information whatsoever.</p>
+    <p>The App itself does not ask for an account, a name, an email address, or any personal details — you can pick up and play immediately. The App does show advertising through Google AdMob to keep the game free, and Google AdMob collects your device's advertising identifier to do that. That is the only data connected to this App.</p>
     <div class="highlight">
-      <p>🛡️ <strong>Short version:</strong> We collect absolutely nothing. No data leaves your device. No accounts. No ads. No tracking. The game works entirely on your device.</p>
+      <p>🛡️ <strong>Short version:</strong> No accounts, no personal info, no location, no analytics. The App shows ads via Google AdMob, which uses your device's advertising ID to serve and measure those ads. Your game progress and settings stay on your device only.</p>
     </div>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">2</span> Information We Do NOT Collect</div>
-    <p>The App does not collect any of the following:</p>
+    <div class="section-title"><span class="num">2</span> Information We Collect</div>
+    <p>The only information associated with the App is collected on our behalf by our advertising partner, Google AdMob, in order to display ads:</p>
+    <div class="pill-row">
+      <span class="pill amber">✓ Advertising identifier (Google Advertising ID / AAID)</span>
+    </div>
+    <p style="margin-top:12px;">We never see or store this identifier ourselves — it is read from your device and sent directly to Google as part of each ad request. We do not operate any servers of our own, and nothing about your gameplay is sent to us.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">3</span> Information We Do NOT Collect</div>
+    <p>Beyond the advertising identifier described above, the App does not collect any of the following:</p>
     <div class="pill-row">
       <span class="pill red">✕ Personal information</span>
       <span class="pill red">✕ Email addresses</span>
       <span class="pill red">✕ Names or usernames</span>
-      <span class="pill red">✕ Device identifiers</span>
-      <span class="pill red">✕ Advertising ID (GAID)</span>
-      <span class="pill red">✕ Location data</span>
+      <span class="pill red">✕ Precise location</span>
       <span class="pill red">✕ Usage analytics</span>
       <span class="pill red">✕ Crash reports</span>
       <span class="pill red">✕ Purchase history</span>
-      <span class="pill red">✕ Contact information</span>
+      <span class="pill red">✕ Contacts, photos, camera, or microphone</span>
     </div>
+    <p style="margin-top:12px;">The App has no login system, no in-app purchases, and no analytics or crash-reporting SDKs of any kind.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">3</span> Advertising</div>
-    <p>The App contains no advertisements of any kind. We do not integrate any ad networks including but not limited to Google AdMob, Facebook Audience Network, or any other third-party advertising SDK.</p>
-    <p>We do not use the Google Advertising ID (com.google.android.gms.permission.AD_ID) or any equivalent identifier. This permission is not declared or used in our application.</p>
+    <div class="section-title"><span class="num">4</span> Advertising</div>
+    <p>The App displays advertising supplied by <strong>Google AdMob</strong> (part of Google's Mobile Ads platform) to support free play. Two ad formats are used:</p>
     <div class="pill-row">
-      <span class="pill red">✕ No AdMob</span>
-      <span class="pill red">✕ No banner ads</span>
-      <span class="pill red">✕ No video ads</span>
-      <span class="pill red">✕ No interstitial ads</span>
-      <span class="pill red">✕ No Advertising ID</span>
+      <span class="pill green">✓ Banner ads</span>
+      <span class="pill green">✓ Interstitial (full-screen) ads shown between matches</span>
     </div>
+    <p style="margin-top:12px;">To serve and measure these ads, Google AdMob may collect your device's advertising identifier and other technical signals (such as general device and network information) as described in <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--accent);">Google's Privacy Policy</a>. We do not control how Google's ad systems use this data beyond serving ads inside this App, and we do not receive or store it ourselves.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">4</span> Internet &amp; Permissions</div>
-    <p>The App does not require an internet connection to function. All gameplay happens entirely on your device with no network communication.</p>
-    <p>The App does not request any sensitive Android permissions. There is no access to your camera, microphone, contacts, storage, location, or any other device feature beyond what is required to run the game itself.</p>
-  </div>
-
-  <div class="section">
-    <div class="section-title"><span class="num">5</span> Third-Party Services</div>
-    <p>The App does not integrate any third-party SDKs, analytics platforms, crash reporting tools, or external services. There are no connections to external servers and no data is transmitted to us or any third party.</p>
+    <div class="section-title"><span class="num">5</span> Your Ad Choices</div>
+    <p>You can limit ad personalization or reset your advertising identifier at any time, independently of this App, through your device settings:</p>
     <div class="pill-row">
-      <span class="pill red">✕ No Google Analytics</span>
-      <span class="pill red">✕ No Firebase</span>
-      <span class="pill red">✕ No Facebook SDK</span>
-      <span class="pill red">✕ No AdMob SDK</span>
+      <span class="pill amber">Android Settings → Privacy → Ads → Delete/reset advertising ID</span>
+      <span class="pill amber">Android Settings → Privacy → Ads → Opt out of Ads Personalization</span>
     </div>
+    <p style="margin-top:12px;">These settings are controlled by Android and Google Play Services, not by us — turning them on will still allow ads to appear, but limits how they may be personalized.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">6</span> Children's Privacy</div>
-    <p>The App is safe for users of all ages. Since we do not collect any personal information from anyone, there is no risk to children's privacy. The App fully complies with the Children's Online Privacy Protection Act (COPPA) and Google Play's Families Policy.</p>
+    <div class="section-title"><span class="num">6</span> Internet &amp; Permissions</div>
+    <p>The App uses your internet connection solely to request and display ads. Core gameplay — rolling dice, moving pieces, playing against the built-in computer opponent — works the same with or without a connection; only ads require one to load.</p>
+    <p>The App does not request access to your camera, microphone, contacts, precise location, or stored files. The only permissions used are the standard ones Android and Google's Mobile Ads SDK require to show ads and keep the app running (such as internet access and the advertising ID permission).</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">7</span> Data Security</div>
-    <p>Since no personal data is collected or transmitted by the App, there is no personal data at risk. Any game progress or settings are stored locally on your device only and are never sent anywhere.</p>
+    <div class="section-title"><span class="num">7</span> Third-Party Services</div>
+    <p>The only third-party service integrated into the App is:</p>
+    <div class="pill-row">
+      <span class="pill green">✓ Google AdMob (Google Mobile Ads SDK)</span>
+    </div>
+    <p style="margin-top:12px;">We do not use Google Analytics, Firebase, Facebook SDK, Crashlytics, or any other analytics, tracking, or mediation network.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">8</span> Changes to This Policy</div>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically. Continued use of the App after any changes constitutes acceptance of the updated policy.</p>
+    <div class="section-title"><span class="num">8</span> Children's Privacy</div>
+    <p>Ancient Ludo: Snake &amp; Ladder is a general-audience board game and is not directed specifically at children under 13. We do not knowingly collect personal information from anyone, of any age — the only data involved is the advertising identifier described above, handled by Google AdMob for ad delivery.</p>
+    <p>If you believe a child has used this App and you have concerns about advertising shown to them, please contact us using the details below and we will assist however we can.</p>
   </div>
 
   <div class="section">
-    <div class="section-title"><span class="num">9</span> Contact Us</div>
+    <div class="section-title"><span class="num">9</span> Data Security</div>
+    <p>Your game progress and preferences (such as background music volume) are stored locally on your device only and are never transmitted anywhere. The only data leaving your device is the advertising identifier sent to Google AdMob as described in Section 4, which is handled under Google's own security and privacy practices.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">10</span> Changes to This Policy</div>
+    <p>We may update this Privacy Policy as the App changes — for example, if we add new features or ad formats. Any changes will be posted on this page with an updated "Last Updated" date above. Continued use of the App after a change constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">11</span> Contact Us</div>
     <p>If you have any questions or concerns about this Privacy Policy, please contact us:</p>
     <div class="contact-box">
       <div class="contact-icon">✉️</div>
@@ -271,7 +288,7 @@
 
 <div class="footer">
   <strong>Privacy Policy — Ancient Ludo: Snake &amp; Ladder by Dragoster Studios</strong><br>
-  Effective Date: May 28, 2026 &nbsp;·&nbsp; This app does not collect, store, or share any personal data.
+  Effective Date: May 28, 2026 &nbsp;·&nbsp; This app shows ads via Google AdMob and collects only your device's advertising identifier for that purpose.
 </div>
 
 </body>
